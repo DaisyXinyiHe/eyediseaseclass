@@ -22,24 +22,11 @@ The test data set contains 350 unlabelled images.
 ## Task 1: Build a classification model for Diabetic Retinopathy and Glaucoma vs normal images. 
 ```
 a. Perform 70/30 data split and report performance scores on the test data set.
-b. You can choose to apply any data augmentation strategy. 
-Explain your methods and rationale behind parameter selection.
-c. Show Training-validation curves to ensure overfitting and underfitting is avoided.
+b. Data augmentation. 
+c. Show Training-validation curves.
 ```
 ## Task 2: Visualize the heatmap to demonstrate what regions of interest contribute to Diabetic Retinopathy and Glaucoma, respectively. 
-```
-Submit images/folder of images with heatmaps/features aligned on top of the images, or corresponding bounding boxes, and report what regions of interest in your opinion represent the pathological sites.
-```
+
 
 ## Task 3: Using the unlabelled data set in the 'test' folder augment the training data (semi-supervised learning) and report the variation in classification performance on test data set.
-[You may use any method of your choice, one possible way is mentioned below.] 
-
-```
-Hint: 
-a. Train a model using the 'train' split.
-b. Pass the unlabelled images through the trained model and retrieve the dense layer feature prior to classification layer. Using this dense layer as representative of the image, apply label propagation to retrieve labels correspndng to the unbalelled data.
-c. Next, concatenate the train data with the unlabelled data (that has now been self labelled) and retrain the network.
-d. Report classification performance on test data
-Use the unlabelled test data  to improve classification performance by using a semi-supervised label-propagation/self-labelling approach.
-```
 
