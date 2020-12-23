@@ -1,3 +1,4 @@
+# This project is a Midterm project from the FourthBrain training program. 
 # eyediseaseclass
 Goal: design models and methods to predictively detect pathological images and explain the pathology sites in the image data.
 
